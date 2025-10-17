@@ -1,169 +1,152 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Home Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>Ruqma — Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header / Navigation -->
-  <header>
-    <div>
-      <a href="HomePage.html" aria-label="Home">
-        <img src="assets/img/logo-placeholder.png" alt="Logo" width="40" height="40" />
-        <strong>Logo</strong>
+  <!-- Header -->
+  <div id="topbar">
+    <div id="logo-area">
+      <a href="HomePage.html">
+        <img src="images/logo-placeholder.png" alt="Logo" width="45" height="45">
       </a>
+      <span class="site-name">Ruqma</span>
     </div>
 
-    <nav aria-label="Main navigation">
+    <div id="nav-area">
       <a href="HomePage.html">Home</a>
       <a href="Services.html">Services</a>
       <a href="About.html">About Us</a>
       <a href="CustomerDashboard.html">Customer Dashboard</a>
-      <a href="ProviderDashboard.html">Service Provider Dashboard</a>
-
-      <!-- Search Box -->
-      <form role="search" aria-label="Site search">
-        <input type="search" name="q" placeholder="Search" />
-      </form>
-    </nav>
-    <hr />
-  </header>
-
-  <main>
-    <!-- Vision -->
-    <section aria-labelledby="vision">
-      <h1>Ruqma</h1>
-      <p>Slogan</p>
-
-      <h2 id="vision">Our Vision</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis elementum elementum.
-        Vivamus et aliquam erat, ut tincidunt metus.
-      </p>
-    </section>
-
-    <!-- Services -->
-    <section aria-labelledby="services">
-      <h2 id="services">Our Services</h2>
-
-      <div>
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Service 1</h3>
-          <p>Short description for Service 1.</p>
-          <a href="Services.html">Find more</a>
-        </article>
-
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Service 2</h3>
-          <p>Short description for Service 2.</p>
-          <a href="Services.html">Find more</a>
-        </article>
-
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Service 3</h3>
-          <p>Short description for Service 3.</p>
-          <a href="Services.html">Find more</a>
-        </article>
-
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Service 4</h3>
-          <p>Short description for Service 4.</p>
-          <a href="Services.html">Find more</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Our Work (Extra Section) -->
-    <section aria-labelledby="work">
-      <h2 id="work">Our Work</h2>
-      <p>Take a look at some of our projects!</p>
-
-      <div>
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Project 1</h3>
-          <p>Short description for Project 1.</p>
-        </article>
-
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Project 2</h3>
-          <p>Short description for Project 2.</p>
-        </article>
-
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Project 3</h3>
-          <p>Short description for Project 3.</p>
-        </article>
-
-        <article>
-          <figure>[ IMG ]</figure>
-          <h3>Project 4</h3>
-          <p>Short description for Project 4.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- User Reviews -->
-    <section aria-labelledby="reviews">
-      <h2 id="reviews">User Reviews</h2>
-      <p>What our clients say about us!</p>
-
-      <div>
-        <figure>
-          <blockquote>“Curabitur et rhoncus nibh, id rutrum ipsum.”</blockquote>
-          <figcaption>★★★★★ — Customer Name</figcaption>
-        </figure>
-
-        <figure>
-          <blockquote>“Aliquam eu viverra leo.”</blockquote>
-          <figcaption>★★★★☆ — Customer Name</figcaption>
-        </figure>
-
-        <figure>
-          <blockquote>“Cras egestas pellentesque porttitor.”</blockquote>
-          <figcaption>★★★★★ — Customer Name</figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
-
-  <hr />
-
-  <!-- Footer aaa -->
-  <footer>
-    <div>
-      <img src="assets/img/logo-placeholder.png" alt="Logo" width="60" height="60" />
-      <div>LOGO</div>
+      <a href="ProviderDashboard.html">Provider Dashboard</a>
+      <a href="ManageStaffMembers.html">Manage Staff</a>
     </div>
 
-    <section aria-labelledby="follow">
-      <h3 id="follow">Follow Us :</h3>
-      <ul>
-        <li>[X]</li>
-        <li>[Snapchat]</li>
-        <li>[Instagram]</li>
-      </ul>
-    </section>
+    <form id="search-box" action="#" method="get">
+      <input type="search" name="q" placeholder="Search">
+      <button type="submit" title="Search">
+        <img src="images/search-icon.png" alt="Search" width="18" height="18">
+      </button>
+    </form>
+  </div>
+  <hr>
 
-    <section aria-labelledby="contact">
-      <h3 id="contact">Contact Us :</h3>
-      <p>Email: info@example.com</p>
-      <p>Phone: 050-000-0000</p>
-    </section>
+  <!-- Vision / Hero -->
+  <div class="container">
+    <h1>Our Vision</h1>
+    <p class="lead">
+      This is a short dummy paragraph that introduces the website vision and what users can expect.
+    </p>
+  </div>
 
-    <div>
-      <small>Copyright © 2025 Ruqma. All rights reserved.</small>
+  <!-- Our Services -->
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards-wrap">
+      <div class="service-box">
+        <img src="images/service1.png" alt="Service 1" class="thumb">
+        <h3>Service 1</h3>
+        <p class="desc">Short one-line description about this service.</p>
+        <a href="Services.html" class="btn">Find more</a>
+      </div>
+
+      <div class="service-box">
+        <img src="images/service2.png" alt="Service 2" class="thumb">
+        <h3>Service 2</h3>
+        <p class="desc">Short one-line description about this service.</p>
+        <a href="Services.html" class="btn">Find more</a>
+      </div>
+
+      <div class="service-box">
+        <img src="images/service3.png" alt="Service 3" class="thumb">
+        <h3>Service 3</h3>
+        <p class="desc">Short one-line description about this service.</p>
+        <a href="Services.html" class="btn">Find more</a>
+      </div>
+
+      <div class="service-box">
+        <img src="images/service4.png" alt="Service 4" class="thumb">
+        <h3>Service 4</h3>
+        <p class="desc">Short one-line description about this service.</p>
+        <a href="Services.html" class="btn">Find more</a>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <!-- Our Work (Extra Section / Portfolio) -->
+  <div class="container">
+    <h2 class="section-title">Our Work</h2>
+
+    <div class="cards-wrap">
+      <div class="work-box">
+        <img src="images/project1.png" alt="Project 1" class="thumb">
+        <h3>Project 1</h3>
+        <p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+
+      <div class="work-box">
+        <img src="images/project2.png" alt="Project 2" class="thumb">
+        <h3>Project 2</h3>
+        <p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+
+      <div class="work-box">
+        <img src="images/project3.png" alt="Project 3" class="thumb">
+        <h3>Project 3</h3>
+        <p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+
+      <div class="work-box">
+        <img src="images/project4.png" alt="Project 4" class="thumb">
+        <h3>Project 4</h3>
+        <p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Reviews -->
+  <div class="container">
+    <h2 class="section-title">User Reviews</h2>
+
+    <div class="cards-wrap">
+      <div class="review-box">
+        <p class="quote">“Great work! Highly recommended.”</p>
+        <p class="reviewer">★★★★★ — Customer A</p>
+      </div>
+
+      <div class="review-box">
+        <p class="quote">“Clear communication and good quality.”</p>
+        <p class="reviewer">★★★★☆ — Customer B</p>
+      </div>
+
+      <div class="review-box">
+        <p class="quote">“Delivered on time and very helpful.”</p>
+        <p class="reviewer">★★★★★ — Customer C</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <div id="footer">
+    <h3>Follow Us</h3>
+    <div id="footer-icons">
+      <a href="#"><img src="images/icon1.png" alt="Snapchat"></a>
+      <a href="#"><img src="images/icon2.png" alt="Instagram"></a>
+      <a href="#"><img src="images/icon3.png" alt="X"></a>
+      <a href="#"><img src="images/icon4.png" alt="LinkedIn"></a>
+    </div>
+
+    <h3>Contact Us</h3>
+    <p>Email: info@example.com | Phone: 050-000-0000</p>
+    <p class="copy">© 2025 Ruqma. All rights reserved.</p>
+  </div>
 
 </body>
 </html>
-
