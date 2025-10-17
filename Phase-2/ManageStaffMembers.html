@@ -1,158 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Manage Staff Members</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div>
-      <a href="HomePage.html" aria-label="Home">
-        <img src="assets/img/logo-placeholder.png" alt="Logo" width="40" height="40" />
-        <strong>Logo</strong>
+  <!-- Header (نفس الهوم) -->
+  <div id="topbar">
+    <div id="logo-area">
+      <a href="HomePage.html">
+        <img src="images/logo-placeholder.png" alt="Logo" width="45" height="45">
       </a>
+      <span class="site-name">Ruqma</span>
     </div>
 
-    <nav aria-label="Main navigation">
+    <div id="nav-area">
       <a href="HomePage.html">Home</a>
       <a href="Services.html">Services</a>
       <a href="About.html">About Us</a>
-      <a href="ProviderDashboard.html">Service Provider Dashboard</a>
-      <form role="search" aria-label="Site search">
-        <input type="search" name="q" placeholder="Search" />
-      </form>
-    </nav>
-    <hr />
-
-    <!-- Breadcrumb -->
-    <nav aria-label="Breadcrumb">
-      <a href="HomePage.html">Home</a> &gt;
-      <a href="ProviderDashboard.html">Service Provider Dashboard</a> &gt;
-      <span aria-current="page">Manage Staff Members</span>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Manage Staff Members</h1>
-
-    <!-- Current Staff Members -->
-    <section aria-labelledby="current-staff">
-      <h2 id="current-staff">Current Staff Members</h2>
-      <form>
-        <ul>
-          <li>
-            <label>
-              <img src="assets/img/member-placeholder.png" alt="Member photo" width="70" height="70" />
-              <span>Member 1 Full Name</span>
-              <input type="checkbox" name="remove_staff" />
-            </label>
-          </li>
-          <li>
-            <label>
-              <img src="assets/img/member-placeholder.png" alt="Member photo" width="70" height="70" />
-              <span>Member 2 Full Name</span>
-              <input type="checkbox" name="remove_staff" />
-            </label>
-          </li>
-          <li>
-            <label>
-              <img src="assets/img/member-placeholder.png" alt="Member photo" width="70" height="70" />
-              <span>Member 3 Full Name</span>
-              <input type="checkbox" name="remove_staff" />
-            </label>
-          </li>
-          <li>
-            <label>
-              <img src="assets/img/member-placeholder.png" alt="Member photo" width="70" height="70" />
-              <span>Member 4 Full Name</span>
-              <input type="checkbox" name="remove_staff" />
-            </label>
-          </li>
-        </ul>
-
-        <p>
-          <button type="submit">Delete Selected</button>
-          <button type="reset">Delete All</button>
-        </p>
-      </form>
-    </section>
-
-    <!-- Add New Member -->
-    <section aria-labelledby="add-member">
-      <h2 id="add-member">Add New Member</h2>
-
-      <form>
-        <p>
-          <label for="nm">Name:</label><br />
-          <input id="nm" name="name" type="text" required />
-        </p>
-
-        <p>
-          <label for="em">Email:</label><br />
-          <input id="em" name="email" type="email" required />
-        </p>
-
-        <p>
-          <label for="dob">Date Of Birth:</label><br />
-          <input id="dob" name="dob" type="date" />
-        </p>
-
-        <p>
-          <label for="skills">Skills:</label><br />
-          <input id="skills" name="skills" type="text" placeholder="e.g., SEO, Ads, Content" />
-        </p>
-
-        <p>
-          <label for="edu">Education:</label><br />
-          <input id="edu" name="education" type="text" placeholder="e.g., BSc IT, Certificates" />
-        </p>
-
-        <section aria-labelledby="upload-photo">
-          <h3 id="upload-photo">Upload Photo:</h3>
-          <div>
-            <p>Choose File Or Drag & Drop It Here</p>
-            <button type="button">Browse File</button>
-          </div>
-        </section>
-
-        <p>
-          <button type="submit">Add Member</button>
-        </p>
-      </form>
-    </section>
-  </main>
-
-  <hr />
-
-  <!-- Footer -->
-  <footer>
-    <div>
-      <img src="assets/img/logo-placeholder.png" alt="Logo" width="60" height="60" />
-      <div>LOGO</div>
+      <a href="CustomerDashboard.html">Customer Dashboard</a>
+      <a href="ProviderDashboard.html">Provider Dashboard</a>
+      <a href="ManageStaffMembers.html">Manage Staff</a>
     </div>
 
-    <section aria-labelledby="follow">
-      <h3 id="follow">Follow Us :</h3>
-      <ul>
-        <li>[X]</li>
-        <li>[Snapchat]</li>
-        <li>[Instagram]</li>
+    <form id="search-box" action="#" method="get">
+      <input type="search" name="q" placeholder="Search">
+      <button type="submit" title="Search">
+        <img src="images/search-icon.png" alt="Search" width="18" height="18">
+      </button>
+    </form>
+  </div>
+  <hr>
+
+  <div class="container">
+    <h1 class="section-title">Manage Staff Members</h1>
+
+    <!-- Breadcrumb بسيط -->
+    <p class="muted">Home &gt; Service Provider Dashboard &gt; <strong>Manage Staff Members</strong></p>
+
+    <!-- القسم 1: قائمة الأعضاء الحاليين -->
+    <h2 class="section-title">Current Staff Members</h2>
+
+    <form action="#" method="get">
+      <ul class="staff-list">
+        <li class="staff-item">
+          <label>
+            <img src="images/member-placeholder.png" alt="Member photo" width="70" height="70">
+            <span class="staff-name">Member 1 Full Name</span>
+            <input type="checkbox" name="remove">
+          </label>
+        </li>
+
+        <li class="staff-item">
+          <label>
+            <img src="images/member-placeholder.png" alt="Member photo" width="70" height="70">
+            <span class="staff-name">Member 2 Full Name</span>
+            <input type="checkbox" name="remove">
+          </label>
+        </li>
+
+        <li class="staff-item">
+          <label>
+            <img src="images/member-placeholder.png" alt="Member photo" width="70" height="70">
+            <span class="staff-name">Member 3 Full Name</span>
+            <input type="checkbox" name="remove">
+          </label>
+        </li>
+
+        <li class="staff-item">
+          <label>
+            <img src="images/member-placeholder.png" alt="Member photo" width="70" height="70">
+            <span class="staff-name">Member 4 Full Name</span>
+            <input type="checkbox" name="remove">
+          </label>
+        </li>
       </ul>
-    </section>
 
-    <section aria-labelledby="contact">
-      <h3 id="contact">Contact Us :</h3>
-      <p>Email: info@example.com</p>
-      <p>Phone: 050-000-0000</p>
-    </section>
+      <p>
+        <button type="submit">Delete Selected</button>
+        <button type="submit">Delete All</button>
+      </p>
+    </form>
 
-    <div>
-      <small>Copyright © 2025 Ruqma. All rights reserved.</small>
+    <hr>
+
+    <!-- القسم 2: إضافة عضو جديد -->
+    <h2 class="section-title">Add New Member</h2>
+
+    <form action="#" method="post">
+      <div class="form-row">
+        <label for="nm">Name</label><br>
+        <input id="nm" name="name" type="text" required>
+      </div>
+
+      <div class="form-row">
+        <label for="em">Email</label><br>
+        <input id="em" name="email" type="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="dob">Date of Birth</label><br>
+        <input id="dob" name="dob" type="date">
+      </div>
+
+      <div class="form-row">
+        <label for="exp">Area of Expertise</label><br>
+        <input id="exp" name="expertise" type="text" placeholder="e.g., Marketing, Design">
+      </div>
+
+      <div class="form-row">
+        <label for="skills">Skills</label><br>
+        <input id="skills" name="skills" type="text" placeholder="e.g., SEO, Ads, Content">
+      </div>
+
+      <div class="form-row">
+        <label for="edu">Education</label><br>
+        <input id="edu" name="education" type="text" placeholder="e.g., BSc IT, Certificates">
+      </div>
+
+      <!-- رفع صورة (بوكس بسيط بدون JS) -->
+      <div class="upload-box">
+        <h3>Upload Photo</h3>
+        <p>Choose File Or Drag &amp; Drop It Here</p>
+        <button type="button">Browse File</button>
+      </div>
+
+      <p>
+        <button type="submit">Add Member</button>
+      </p>
+    </form>
+  </div>
+
+  <hr>
+
+  <!-- Footer (نفس الهوم) -->
+  <div id="footer">
+    <h3>Follow Us</h3>
+    <div id="footer-icons">
+      <a href="#"><img src="images/icon1.png" alt="Snapchat"></a>
+      <a href="#"><img src="images/icon2.png" alt="Instagram"></a>
+      <a href="#"><img src="images/icon3.png" alt="X"></a>
+      <a href="#"><img src="images/icon4.png" alt="LinkedIn"></a>
     </div>
-  </footer>
+
+    <h3>Contact Us</h3>
+    <p>Email: info@example.com | Phone: 050-000-0000</p>
+    <p class="copy">© 2025 Ruqma. All rights reserved.</p>
+  </div>
 
 </body>
 </html>
