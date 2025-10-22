@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Request A Service - Ruqma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Page Title -->
+  <h2>Service Request</h2>
+
+  <!-- Request a Service Form -->
+  <form action="#" method="post">
+
+    <!-- Customer Name -->
+    <p>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="customer_name">
+    </p>
+
+    <!-- Service Dropdown (Phase 2 placeholder names) -->
+    <p>
+      <label for="service">Service:</label><br>
+      <select id="service" name="service">
+        <option value="">Select Service</option>
+        <option value="service1">Service 1</option>
+        <option value="service2">Service 2</option>
+        <option value="service3">Service 3</option>
+      </select>
+    </p>
+
+    <!-- Due Date -->
+    <p>
+      <label for="due_date">Due Date:</label><br>
+      <input type="date" id="due_date" name="due_date">
+    </p>
+
+    <!-- Description -->
+    <p>
+      <label for="description">Description:</label><br>
+      <textarea id="description" name="description" rows="5" cols="40"></textarea>
+    </p>
+
+    <!-- Submit Button -->
+    <p>
+      <input type="submit" value="Submit Request">
+    </p>
+
+  </form>
+
+</body>
+</html>
