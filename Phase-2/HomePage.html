@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <title>Ruqma — Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ربط ملف التنسيق العام للموقع -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- الهيدر: شعار + روابط + بحث -->
   <div id="topbar">
     <div id="logo-area">
+      <!-- نرجّع للهوم عند الضغط على الشعار -->
       <a href="HomePage.html">
         <img src="images/logo-placeholder.png" alt="Logo" width="45" height="45">
       </a>
       <span class="site-name">Ruqma</span>
     </div>
 
+    <!-- روابط الصفحات الأساسية -->
     <div id="nav-area">
       <a href="HomePage.html">Home</a>
       <a href="Services.html">Services</a>
@@ -26,6 +29,7 @@
       <a href="ManageStaffMembers.html">Manage Staff</a>
     </div>
 
+    <!-- صندوق بحث بسيط (شكل فقط) -->
     <form id="search-box" action="#" method="get">
       <input type="search" name="q" placeholder="Search">
       <button type="submit" title="Search">
@@ -34,16 +38,26 @@
     </form>
   </div>
   <hr>
+  <!-- Breadcrumb with links -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="HomePage.html">Home</a>
+    <span class="sep">›</span>
+    <strong>Home Page</strong>
+  </nav>
+</div>
 
-  <!-- Vision / Hero -->
+
+  <!-- مقدمة خفيفة عن الموقع -->
   <div class="container">
     <h1>Our Vision</h1>
-    <p class="lead">
-      This is a short dummy paragraph that introduces the website vision and what users can expect.
-    </p>
+   <p class="lead">
+  This is a short dummy paragraph that introduces the website vision and what users can expect.
+</p>
+
   </div>
 
-  <!-- Our Services -->
+  <!-- الخدمات: أربع بطاقات جنب بعض باستخدام inline-block -->
   <div class="container">
     <h2 class="section-title">Our Services</h2>
 
@@ -51,34 +65,34 @@
       <div class="service-box">
         <img src="images/service1.png" alt="Service 1" class="thumb">
         <h3>Service 1</h3>
-        <p class="desc">Short one-line description about this service.</p>
+<p class="desc">Short one-line description about this service.</p>
         <a href="Services.html" class="btn">Find more</a>
       </div>
 
       <div class="service-box">
         <img src="images/service2.png" alt="Service 2" class="thumb">
         <h3>Service 2</h3>
-        <p class="desc">Short one-line description about this service.</p>
+<p class="desc">Short one-line description about this service.</p>
         <a href="Services.html" class="btn">Find more</a>
       </div>
 
       <div class="service-box">
         <img src="images/service3.png" alt="Service 3" class="thumb">
         <h3>Service 3</h3>
-        <p class="desc">Short one-line description about this service.</p>
+<p class="desc">Short one-line description about this service.</p>
         <a href="Services.html" class="btn">Find more</a>
       </div>
 
       <div class="service-box">
         <img src="images/service4.png" alt="Service 4" class="thumb">
         <h3>Service 4</h3>
-        <p class="desc">Short one-line description about this service.</p>
+<p class="desc">Short one-line description about this service.</p>
         <a href="Services.html" class="btn">Find more</a>
       </div>
     </div>
   </div>
 
-  <!-- Our Work (Extra Section / Portfolio) -->
+  <!-- أعمالنا: أمثلة مشاريع بسيطة -->
   <div class="container">
     <h2 class="section-title">Our Work</h2>
 
@@ -86,30 +100,30 @@
       <div class="work-box">
         <img src="images/project1.png" alt="Project 1" class="thumb">
         <h3>Project 1</h3>
-        <p class="desc">Dummy text describing the project purpose and value.</p>
+<p class="desc">Dummy text describing the project purpose and value.</p>
       </div>
 
       <div class="work-box">
         <img src="images/project2.png" alt="Project 2" class="thumb">
         <h3>Project 2</h3>
-        <p class="desc">Dummy text describing the project purpose and value.</p>
+<p class="desc">Dummy text describing the project purpose and value.</p>
       </div>
 
       <div class="work-box">
         <img src="images/project3.png" alt="Project 3" class="thumb">
         <h3>Project 3</h3>
-        <p class="desc">Dummy text describing the project purpose and value.</p>
+<p class="desc">Dummy text describing the project purpose and value.</p>
       </div>
 
       <div class="work-box">
         <img src="images/project4.png" alt="Project 4" class="thumb">
         <h3>Project 4</h3>
-        <p class="desc">Dummy text describing the project purpose and value.</p>
+<p class="desc">Dummy text describing the project purpose and value.</p>
       </div>
     </div>
   </div>
 
-  <!-- User Reviews -->
+  <!-- آراء المستخدمين: ثلاث بطاقات -->
   <div class="container">
     <h2 class="section-title">User Reviews</h2>
 
@@ -133,7 +147,7 @@
 
   <hr>
 
-  <!-- Footer -->
+  <!-- الفوتر: أيقونات تواصل + معلومات -->
   <div id="footer">
     <h3>Follow Us</h3>
     <div id="footer-icons">
