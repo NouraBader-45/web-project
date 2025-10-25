@@ -1,124 +1,124 @@
-/* ========== Base ========== */
+/* أساسيات عامة */
 * { box-sizing: border-box; }
-body { font-family: Arial, Helvetica, sans-serif; color:#222; background:#fff; line-height:1.6; margin:0; }
-a { color:#0b70d1; text-decoration:none; }
+body { font-family: Arial, Helvetica, sans-serif; 
+color:#222; background:#fff; line-height:1.6; margin:0; }
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin: 6px 0 12px;
+}
+
+.breadcrumb a {
+  color: #0b70d1;          /* رابط أزرق بسيط */
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .sep {
+  margin: 0 6px;
+  color: #999;
+}
+
+
+a { color:#0b70d1; 
+text-decoration:none; }
 a:hover { text-decoration:underline; }
+
 hr { border:0; border-top:1px solid #ddd; margin:20px 0; }
 
-.container { width: 92%; max-width: 1100px; margin: 18px auto; }
-.section-title { margin: 10px 0 12px; }
+.container { width:92%; max-width:1100px; margin:18px auto; }
+.section-title { margin:10px 0 12px; }
 .lead { color:#555; }
-
-/* ========== Header ========== */
-#topbar {
-  background:#f8f9fb;
-  border-bottom:2px solid #ddd;
-  padding:10px 12px;
-}
-
-#logo-area { display:inline-block; vertical-align:middle; }
-#logo-area .site-name { margin-left:8px; font-weight:bold; }
-
-#nav-area { display:inline-block; vertical-align:middle; margin-left:14px; }
-#nav-area a { margin:0 6px; font-weight:bold; color:#333; }
-#nav-area a:hover { color:#0b70d1; }
-
-#search-box { display:inline-block; vertical-align:middle; float:right; }
-#search-box input[type="search"] {
-  padding:6px 8px; border:1px solid #ccc; border-radius:18px; width:160px;
-}
-#search-box button {
-  background:#fff; border:1px solid #ccc; border-radius:18px; padding:5px 8px; cursor:pointer;
-}
-#search-box img { vertical-align:middle; }
-
-/* ========== Cards layout (inline-block) ========== */
-.cards-wrap { text-align:center; }
-
-.service-box,
-.work-box,
-.review-box {
-  display:inline-block;           /* عشان تكون جنب بعض */
-  vertical-align: top;
-  width: 23%;                     /* تقريبًا 4 بالعرض */
-  margin: 1%;
-  border:1px solid #e6e6e6;
-  padding:12px;
-  border-radius:8px;
-  background:#fff;
-}
-
-.review-box { width:30%; }        /* ثلاث تقييمات جنب بعض */
-.thumb { display:block; margin:0 auto 10px; width:100px; height:100px; object-fit:cover; }
-.desc { color:#555; font-size:14px; }
-.btn {
-  display:inline-block; padding:8px 12px; border:1px solid #0b70d1;
-  border-radius:6px; color:#0b70d1; background:#fff; margin-top:6px;
-}
-.btn:hover { background:#0b70d1; color:#fff; text-decoration:none; }
-
-/* ========== Footer ========== */
-#footer {
-  background:#222; color:#fff; text-align:center; padding:24px 10px; border-top:3px solid #0b70d1;
-}
-#footer h3 { margin:6px 0 8px; color:#aad3ff; }
-#footer-icons img {
-  width:28px; height:28px; margin:0 6px;
-  filter: brightness(0) invert(1);
-}
-#footer p { margin:8px 0; }
-.copy { color:#aaa; font-size:13px; }
-
-
-
-
-/* ===== Manage Staff Members Page ===== */
 .muted { color:#666; margin:6px 0 14px; font-size:14px; }
 
-/* قائمة الأعضاء الحالية */
-.staff-list { list-style: none; padding:0; margin: 8px 0 12px; }
+/* الهيدر */
+#topbar { background:#f8f9fb;
+ border-bottom:2px solid #ddd; 
+ padding:10px 12px; }
+#logo-area { display:inline-block; 
+vertical-align:middle; }
+#logo-area .site-name { margin-left:8px; 
+font-weight:bold; }
+#nav-area { display:inline-block; 
+vertical-align:middle; 
+margin-left:14px; }
+#nav-area a { margin:0 6px; 
+font-weight:bold; 
+color:#333; }
+#nav-area a:hover { color:#0b70d1; }
+#search-box { display:inline-block; 
+vertical-align:middle; 
+float:right; }
+#search-box input[type="search"] { padding:6px 8px;
+ border:1px solid #ccc;
+ border-radius:18px;
+ width:160px; }
+#search-box button { background:#fff;
+ border:1px solid #ccc; 
+ border-radius:18px; 
+ padding:5px 8px; 
+ cursor:pointer; }
+#search-box img { vertical-align:middle; }
+
+/* بطاقات عامة (inline-block) */
+.cards-wrap { text-align:center; }
+.service-box, .work-box {
+  display:inline-block; vertical-align: top;
+  width:23%; margin:1%;
+  border:1px solid #e6e6e6; padding:12px; border-radius:8px; background:#fff;
+}
+.review-box {
+  display:inline-block; vertical-align: top;
+  width:30%; margin:1%;
+  border:1px solid #e6e6e6; padding:12px; border-radius:8px; background:#fff;
+}
+.thumb { display:block; 
+margin:0 auto 10px; width:100px; 
+height:100px; object-fit:cover; }
+.desc { color:#555; font-size:14px; }
+.btn { display:inline-block; padding:8px 12px; 
+border:1px solid #0b70d1; 
+border-radius:6px; color:#0b70d1; background:#fff; 
+margin-top:6px; }
+
+.btn:hover { background:#0b70d1; 
+color:#fff; text-decoration:none; }
+
+/* إدارة الأعضاء */
+.staff-list { list-style:none; padding:0; margin:8px 0 12px; }
 .staff-item {
-  display: inline-block;   /* نخلي البطاقات جنب بعض */
-  width: 23%;              /* أربع بطاقات في الصف تقريبًا */
-  margin: 1%;
+  display:inline-block; width:23%; margin:1%;
   vertical-align: top;
-  border:1px solid #e6e6e6;
-  border-radius:8px;
-  padding:10px;
-  text-align:center;
-  background:#fff;
+  border:1px solid #e6e6e6; border-radius:8px;
+  padding:10px; text-align:center; background:#fff;
 }
 .staff-item img { display:block; margin:0 auto 8px; }
 .staff-name { display:block; margin:6px 0; }
-
-/* نموذج إضافة عضو */
-.form-row { margin: 10px 0; }
-.form-row input[type="text"],
-.form-row input[type="email"],
-.form-row input[type="date"] {
-  width: 100%;
-  max-width: 420px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+.form-row { margin:10px 0; }
+.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="date"] {
+  width:100%; max-width:420px; padding:8px; border:1px solid #ccc; border-radius:6px;
 }
+.upload-box { border:2px dashed #ccc; padding:14px; 
+margin:12px 0; text-align:center;
+ border-radius:8px; background:#fafafa; }
 
-.upload-box {
-  border:2px dashed #ccc;
-  padding:14px;
-  margin: 12px 0;
-  text-align:center;
-  border-radius:8px;
-  background:#fafafa;
-}
 
-button {
-  padding:8px 12px;
-  border:1px solid #0b70d1;
-  background:#fff;
-  color:#0b70d1;
-  border-radius:6px;
-  cursor:pointer;
-}
+button { padding:8px 12px; border:1px solid #0b70d1;
+ background:#fff; color:#0b70d1; border-radius:6px; cursor:pointer; }
 button:hover { background:#0b70d1; color:#fff; }
 
+/* الفوتر */
+#footer { background:#222; color:#fff; text-align:center; padding:24px 10px;
+ border-top:3px solid #0b70d1; }
+ 
+#footer h3 { margin:6px 0 8px; color:#aad3ff; }
+
+#footer-icons img { width:28px; height:28px; margin:0 6px; filter:brightness(0) invert(1); }
+
+#footer p { margin:8px 0; }
+.copy { color:#aaa; font-size:13px; }
