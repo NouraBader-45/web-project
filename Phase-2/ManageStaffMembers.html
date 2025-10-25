@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>Manage Staff Members</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- نفس ملف التنسيق -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header (نفس الهوم) -->
+  <!-- هيدر مطابق للهوم للثبات -->
   <div id="topbar">
     <div id="logo-area">
       <a href="HomePage.html">
@@ -34,14 +35,24 @@
     </form>
   </div>
   <hr>
+<!-- Breadcrumb with links -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="HomePage.html">Home</a>
+    <span class="sep">›</span>
+    <a href="ProviderDashboard.html">Service Provider Dashboard</a>
+    <span class="sep">›</span>
+    <strong>Manage Staff Members</strong>
+  </nav>
+</div>
 
   <div class="container">
     <h1 class="section-title">Manage Staff Members</h1>
 
-    <!-- Breadcrumb بسيط -->
+    <!-- تنبيه بسيط للمسار داخل الموقع -->
     <p class="muted">Home &gt; Service Provider Dashboard &gt; <strong>Manage Staff Members</strong></p>
 
-    <!-- القسم 1: قائمة الأعضاء الحاليين -->
+    <!-- قائمة الأعضاء (شكل فقط) -->
     <h2 class="section-title">Current Staff Members</h2>
 
     <form action="#" method="get">
@@ -79,6 +90,7 @@
         </li>
       </ul>
 
+      <!-- أزرار التحكم (تجريبية) -->
       <p>
         <button type="submit">Delete Selected</button>
         <button type="submit">Delete All</button>
@@ -87,7 +99,7 @@
 
     <hr>
 
-    <!-- القسم 2: إضافة عضو جديد -->
+    <!-- نموذج إضافة عضو جديد (حقول أساسية) -->
     <h2 class="section-title">Add New Member</h2>
 
     <form action="#" method="post">
@@ -121,7 +133,7 @@
         <input id="edu" name="education" type="text" placeholder="e.g., BSc IT, Certificates">
       </div>
 
-      <!-- رفع صورة (بوكس بسيط بدون JS) -->
+      <!-- بوكس لرفع صورة (شكل توضيحي) -->
       <div class="upload-box">
         <h3>Upload Photo</h3>
         <p>Choose File Or Drag &amp; Drop It Here</p>
@@ -136,7 +148,7 @@
 
   <hr>
 
-  <!-- Footer (نفس الهوم) -->
+  <!-- فوتـر موحّد -->
   <div id="footer">
     <h3>Follow Us</h3>
     <div id="footer-icons">
