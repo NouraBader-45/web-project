@@ -1,190 +1,455 @@
+ /* ===========================
+        About us Page
+   =========================== */
+.video-container {
+  position: relative;
+  width: 640px;
+  height: 360px;
+  margin: 50px auto; 
 
-table, th, td {border:1px solid Black;
-text-align:center;
-color:white;}
 
-table {margin: auto auto 70px;
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0; 
 }
 
-table caption {font: bold 30px sans-serif;
-margin: 50px;
-text-align: center;
-color: black;}
 
-th {background-color:DarkOrchid;
-padding: 20px;}
-
-td {background-color:white;
-color:black;
-padding: 20px;}
-
-.profile-photo {width: 200px;
-height: 200px}
-
-table ul, table li {text-align:left}
-
-table ul {list-style-type: disc;}
-
-#Sort {float:right;
-margin:0px 50px;}
-
-.service-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  margin: 40px auto;
-  max-width: 1000px;
-}
-
-.service-container div {
-  width: 45%;   
-  border: 1px solid black;
-  margin: 15px;
-  background: #fff;
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;         
+  font-size: 24px;        
+  font-weight: 600;
   text-align: center;
+  z-index: 1;
+  background: none;       
+  padding: 0;             
+}
+
+/* Team section container */
+.team-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+.team-container {
+  display: flex;
+  justify-content: center;   
+  align-items: flex-start;   
+  gap: 50px;                 
+  flex-wrap: wrap;           
+  margin-top: 30px;
+}
+
+
+.team-member {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;              
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+/* Team member photo */
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.team-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.team-role {
+  color: gray;
+  font-size: 14px;
+  margin: 5px 0 15px 0;
+}
+
+/* "More" button styling */
+.team-member button {
+  background-color: #f0f0f0;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.team-member button:hover {
+  background-color: #ddd;
+}
+/* Goals section */
+.goals-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* Container for all goals */
+.goals-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   /* new not taken in lessons*/
+  gap: 40px;                             /* new not taken in lessons*/
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.goal-item {
+  width: 300px;
+  height: 250px;
+  border: 2px solid #000;              
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.goal-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.goal-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+
+.goal-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+
+  .goal-item {
+    width: 90%;
+  }
+}
+/* Join Section */
+.join-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.join-form label {
+  align-self: flex-start;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.upload-box {
+  border: 2px dashed #999;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+  height: 150px;
+  text-align: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+.upload-box:hover {
+  border-color: #555;
+  background-color: #f0f0f0;
+}
+
+.upload-box p {
+  margin: 8px 0;
+  font-weight: 500;
+  color: #333;
+}
+
+
+input[type="file"] {
+  margin-top: 8px;
+  padding-right: 25px; 
+  cursor: pointer;
+}
+
+/* Submit button */
+.join-form input[type="submit"] {
+  background-color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+/* ===  Add Service Page === */
+.add-service-page main {
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  flex-direction: column;
+  min-height: calc(100vh - 250px); 
+  text-align: center;
+}
+
+/* Page title */
+.add-service-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Centered form only */
+.add-service-page form {
+  background: #fff;
+  border: none;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
   box-sizing: border-box;
-  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.service-photo {height:300px;
-width: 300px;
-margin: 20px;}
 
-.service-container h1 {font: bold 20px serif;}
-
-.service-container p {font: 14px sans-serif;
-margin: 10px;}
-
-
-* { box-sizing: border-box; }
-body { font-family: Arial, Helvetica, sans-serif; 
-color:#222; background:#fff; line-height:1.6; margin:0; }
-
-/* Breadcrumb */
-.breadcrumb {
-  font:  italic 16px sans-serif;
-  color: #666;
-  margin: 12px 0 12px;
-  padding: 6px;
+.add-service-page label {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 6px;
 }
 
-.breadcrumb a {
-  color: #0b70d1;          /* رابط أزرق بسيط */
+
+.add-service-page input[type="text"],
+.add-service-page textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+
+.add-service-page div[style*="border"] {
+  border: 2px solid #000 !important;
+  border-radius: 15px !important;
+  width: 100%;
+  max-width: 400px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+.add-service-page input[type="submit"] {
+  background: #e0e0e0;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-service-page input[type="submit"]:hover {
+  background: #d6d6d6;
+}
+
+
+
+ .breadcrumb {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto 0 auto; 
+  text-align: left;
+  font-style: italic;
+  font-size: 16px;
+  color: #000;
+}
+
+/
+.add-service-page .breadcrumb a {
+  color: #000;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.breadcrumb a:hover {
+.add-service-page .breadcrumb a:hover {
   text-decoration: underline;
 }
 
-.breadcrumb .sep {
-  margin: 0 6px;
-  color: #999;
+
+/* ===========================
+   SERVICE PROVIDER DASHBOARD PAGE
+   =========================== */
+.Service-Dashboard {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Title */
+.Service-Dashboard .dashboard-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Service Table */
+.Service-Dashboard .service-table {
+  width: 90%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  margin: 0 auto; /* centers the table */
+  border: 2px solid #000;
+}
+
+.Service-Dashboard .service-table th,
+.Service-Dashboard .service-table td {
+  border: 1px solid #000;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.Service-Dashboard .service-table th {
+  background-color: rebeccapurple; 
+  color: #fff;                     
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  padding: 12px 15px;
+}
+
+.Service-Dashboard .service-table td img {
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 4px;
 }
 
 
-a { color:#0b70d1; 
-text-decoration:none; }
-a:hover { text-decoration:underline; }
-
-hr { border:0; border-top:1px solid #ddd; margin:20px 0; }
-
-.container { width:92%; max-width:1100px; margin:18px auto; }
-.section-title { margin:10px 0 12px; }
-.lead { color:#555; }
-.muted { color:#666; margin:6px 0 14px; font-size:14px; }
-
-/* الهيدر */
-#topbar { background:#f8f9fb;
- border-bottom:2px solid #ddd; 
- padding:10px 12px; }
-#logo-area { display:inline-block; 
-vertical-align:middle; }
-#nav-area { display:inline-block; 
-vertical-align:middle; 
-margin-left:40px; }
-#nav-area a { margin:0 10px; 
-font-weight:bold; 
-color:#333; }
-#nav-area a:hover { color:#0b70d1; }
-#search-box { display:inline-block; 
-vertical-align:middle; 
-text-indent: 500px;}
-#search-box input[type="search"] { padding:6px 8px;
- border:1px solid #ccc;
- border-radius:18px;
- width:160px; }
-#search-box button { background:#fff;
- border:1px solid #ccc; 
- border-radius:18px; 
- padding:5px 8px; 
- cursor:pointer; }
-#search-box img { vertical-align:middle; }
-
-/* بطاقات عامة (inline-block) */
-.cards-wrap { text-align:center; }
-.service-box, .work-box {
-  display:inline-block; vertical-align: top;
-  width:23%; margin:1%;
-  border:1px solid #e6e6e6; padding:12px; border-radius:8px; background:#fff;
+.Service-Dashboard .actions {
+  text-align: center;
 }
-.review-box {
-  display:inline-block; vertical-align: top;
-  width:30%; margin:1%;
-  border:1px solid #e6e6e6; padding:12px; border-radius:8px; background:#fff;
+
+.Service-Dashboard .actions .icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
 }
-.thumb { display:block; 
-margin:0 auto 10px; width:100px; 
-height:100px; object-fit:cover; }
-.desc { color:#555; font-size:14px; }
-.btn { display:inline-block; padding:8px 12px; 
-border:1px solid #0b70d1; 
-border-radius:6px; color:#0b70d1; background:#fff; 
-margin-top:6px; }
 
-.btn:hover { background:#0b70d1; 
-color:#fff; text-decoration:none; }
 
-/* إدارة الأعضاء */
-.staff-list { list-style:none; padding:0; margin:8px 0 12px; }
-.staff-item {
-  display:inline-block; width:23%; margin:1%;
-  vertical-align: top;
-  border:1px solid #e6e6e6; border-radius:8px;
-  padding:10px; text-align:center; background:#fff;
+.Service-Dashboard .dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 80px 0;
+  gap: 30px;
 }
-.staff-item img { display:block; margin:0 auto 8px; }
-.staff-name { display:block; margin:6px 0; }
-.form-row { margin:10px 0; }
-.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="date"] {
-  width:100%; max-width:420px; padding:8px; border:1px solid #ccc; border-radius:6px;
+
+.Service-Dashboard .dashboard-btn {
+  background-color: #e0e0e0;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 12px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 250px;
 }
-.upload-box { border:2px dashed #ccc; padding:14px; 
-margin:12px 0; text-align:center;
- border-radius:8px; background:#fafafa; }
+
+.Service-Dashboard .dashboard-btn:hover {
+  background-color: #d6d6d6;
+}
 
 
-button { padding:8px 12px; border:1px solid #0b70d1;
- background:#fff; color:#0b70d1; border-radius:6px; cursor:pointer; }
-button:hover { background:#0b70d1; color:#fff; }
+.Service-Dashboard .service-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
 
-/* الفوتر */
-#footer { background:#222; color:#fff; text-align:center; padding:24px 10px;
- border-top:3px solid #0b70d1; 
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-around;
- align-items: center;}
- 
-#footer h3 { margin:6px 0 8px; color:#aad3ff; }
 
-#footer-icons img { width:28px; height:28px; margin:0 6px; filter:brightness(0) invert(1); }
+@media (max-width: 768px) {
+  .Service-Dashboard .service-table {
+    font-size: 14px;
+  }
 
-#logo-footer { margin:8px 200px;}
-
-#footer p { margin: 8px 200px; }
-.copy {  background:#222;  color:#aaa; font-size:13px; align-self:center;}
+  .Service-Dashboard .dashboard-btn {
+    width: 200px;
+    font-size: 16px;
+  }
+}
 
 
