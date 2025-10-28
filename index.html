@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruqma — Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ربط ملف التنسيق العام للموقع -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header> 
+   <!-- الهيدر: شعار + روابط + بحث -->
+  <div id="topbar">
+    <div id="logo-area">
+      <!-- نرجّع للهوم عند الضغط على الشعار -->
+      <a href="HomePage.html">
+        <img src="images/logo-placeholder.png" alt="Logo" width="45" height="45">
+      </a>
+      <span class="site-name">Ruqma</span>
+    </div>
+
+    <!-- روابط الصفحات الأساسية -->
+    <div id="nav-area">
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="About_us_page.html">About Us</a>
+      <a href="customer-dashboard.html">Customer Dashboard</a>
+      <a href="Services_Provider_Dashboard.html">Provider Dashboard</a>
+    </div>
+
+    <!-- صندوق بحث بسيط (شكل فقط) -->
+    <form id="search-box" action="#" method="get">
+      <input type="search" name="q" placeholder="Search">
+      <button type="submit" title="Search">
+        <img src="images/search-icon.png" alt="Search" width="18" height="18">
+      </button>
+    </form>
+  </div>
+  <hr>
+  <!-- Breadcrumb with links -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+   
+  </nav>
+</div>
+
+</header>
+
+  <!-- مقدمة خفيفة عن الموقع -->
+  <div class="container">
+    <h1>Our Vision</h1>
+   <p class="lead">
+  This is a short dummy paragraph that introduces the website vision and what users can expect.
+</p>
+
+  </div>
+
+  <!-- الخدمات: أربع بطاقات جنب بعض باستخدام inline-block -->
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards-wrap">
+      <div class="service-box">
+        <img src="images/service1.png" alt="Service 1" class="thumb">
+        <h3>Search Engine Optimization (SEO)</h3>
+<p class="desc">Short one-line description about this service.</p>
+        <a href="Services.html" class="btn">Find more</a>
+      </div>
+
+      <div class="service-box">
+        <img src="images/service2.png" alt="Service 2" class="thumb">
+        <h3>Visual Identity</h3>
+<p class="desc">Short one-line description about this service.</p>
+        <a href="Services.html" class="btn">Find more</a>
+      </div>
+
+      <div class="service-box">
+        <img src="images/service3.png" alt="Service 3" class="thumb">
+        <h3>Creative Content Creation</h3>
+<p class="desc">Short one-line description about this service.</p>
+        <a href="Services.html" class="btn">Find more</a>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <!-- أعمالنا: أمثلة مشاريع بسيطة -->
+  <div class="container">
+    <h2 class="section-title">Our Work</h2>
+
+    <div class="cards-wrap">
+      <div class="work-box">
+        <img src="images/project1.png" alt="Project 1" class="thumb">
+        <h3>Project 1</h3>
+<p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+
+      <div class="work-box">
+        <img src="images/project2.png" alt="Project 2" class="thumb">
+        <h3>Project 2</h3>
+<p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+
+      <div class="work-box">
+        <img src="images/project3.png" alt="Project 3" class="thumb">
+        <h3>Project 3</h3>
+<p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+
+      <div class="work-box">
+        <img src="images/project4.png" alt="Project 4" class="thumb">
+        <h3>Project 4</h3>
+<p class="desc">Dummy text describing the project purpose and value.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- آراء المستخدمين: ثلاث بطاقات -->
+  <div class="container">
+    <h2 class="section-title">User Reviews</h2>
+
+    <div class="cards-wrap">
+      <div class="review-box">
+        <p class="quote">“Great work! Highly recommended.”</p>
+        <p class="reviewer">★★★★★ — Customer A</p>
+      </div>
+
+      <div class="review-box">
+        <p class="quote">“Clear communication and good quality.”</p>
+        <p class="reviewer">★★★★☆ — Customer B</p>
+      </div>
+
+      <div class="review-box">
+        <p class="quote">“Delivered on time and very helpful.”</p>
+        <p class="reviewer">★★★★★ — Customer C</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- الفوتر: أيقونات تواصل + معلومات -->
+  <div id="footer">
+    <h3>Follow Us</h3>
+    <div id="footer-icons">
+      <a href="#"><img src="images/icon1.png" alt="Snapchat"></a>
+      <a href="#"><img src="images/icon2.png" alt="Instagram"></a>
+      <a href="#"><img src="images/icon3.png" alt="X"></a>
+      <a href="#"><img src="images/icon4.png" alt="LinkedIn"></a>
+    </div>
+
+    <h3>Contact Us</h3>
+    <p>Email: info@example.com | Phone: 050-000-0000</p>
+    <p class="copy">© 2025 Ruqma. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
