@@ -1,0 +1,27 @@
+ <footer> 
+<div id="footer">
+
+
+<div>
+<a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-footer">
+      </a>
+</div>
+<div>
+	Follow Us: <br> <br>
+    <div id="footer-icons">
+	  <a href="#"><img src="images/icon-x.png" alt="X"></a>
+      <a href="#"><img src="images/icon-Snapchat.png" alt="Snapchat"></a>
+      <a href="#"><img src="images/icon-Instagram.png" alt="Instagram"></a>
+	  <br>  
+    </div>
+</div>
+
+<div>
+    Contact Us: <br> 
+    <p>Email: Ruqma@gmail.com</p> <p> Phone: 055-555-5555</p>
+</div>
+  <p class="copy"> Copyright: &copy; 2025 Ruqma. All rights reserved.</p>
+ </div>
+ 
+</footer>
