@@ -1,0 +1,56 @@
+
+  <header> 
+  <div id="topbar">
+  <!-- Live clock (in header) -->
+<div id="headerClock">
+  <span id="liveClock"></span>
+</div>
+
+    <div id="logo-area">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-header">
+      </a>
+
+    </div>
+	
+===========================انتبهو الروابط اللي هنا مفروض غير عند كل وحده  فلا تغيرون اللي عندكم قبل=================================
+    <div id="nav-area">
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="About_us_page.html">About Us</a>
+      <a href="customer-dashboard.html">Customer Dashboard</a>
+      <a href="Services_Provider_Dashboard.html">Provider Dashboard</a>
+	  
+    </div>
+============================================================================================================
+
+    
+	<!-- Theme toggle switch -->
+<label class="theme-switch">
+  <input type="checkbox" id="themeToggle">
+  <span class="slider"></span>
+</label>
+
+
+    <!-- صندوق بحث بسيط (شكل فقط) -->
+	
+    <form id="search-box" action="#" method="get">
+      <input type="search" name="q" placeholder="Search">
+      <button type="submit" title="Search">
+        <img src="images/icon-search.png" alt="Search" width="18" height="18">
+      </button>
+    </form>
+	
+  </div>
+===========================================================================وهاذي بعد البريد كرمب  خلو حقتكم القديمه زي ما هي=========================================================  	 
+  <!-- Breadcrumb with links -->
+  
+  
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+   
+  </nav>
+</div>
+
+</header>
