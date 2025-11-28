@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var saved = localStorage.getItem(STAFF_KEY);
     if (saved) return JSON.parse(saved);
 
-    // أول مرة: خزني الافتراضي
+   
     localStorage.setItem(STAFF_KEY, JSON.stringify(defaultMembers));
     return defaultMembers;
   }
@@ -61,14 +61,18 @@ if (clock) {
   setInterval(updateClock, 1000);
 }
 
-// Theme Toggle
+// ========================
+// Theme Toggle (global)
+// ========================
+
+var savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  document.body.classList.add("light-theme");
+}
+
 var toggle = document.getElementById("themeToggle");
 if (toggle) {
-  var saved = localStorage.getItem("theme");
-  if (saved === "light") {
-    document.body.classList.add("light-theme");
-    toggle.checked = true;
-  }
+  toggle.checked = (savedTheme === "light");
 
   toggle.addEventListener("change", function () {
     if (toggle.checked) {
@@ -80,6 +84,7 @@ if (toggle) {
     }
   });
 }
+
 
 
  
@@ -156,7 +161,7 @@ if (toggle) {
 
       var checked = staffList.querySelectorAll("input[type=checkbox]:checked");
       if (checked.length === 0) {
-       
+        //  alert
         alert("Please select at least one offer.");
         return;
       }
@@ -179,7 +184,7 @@ if (toggle) {
       renderStaff();
     });
 
-    // Delete All (زر عندكم له id)
+    // Delete All 
     if (deleteAllBtn) {
       deleteAllBtn.addEventListener("click", function (e) {
         e.preventDefault();
@@ -212,22 +217,47 @@ if (toggle) {
         ? addMemberForm.querySelector('input[type="file"]').files[0]
         : null;
 
-      var errors = [];
-      if (!n || !em || !dob || !sk || !ed || !ph) errors.push("- Please fill in all fields.");
-      if (/^\d/.test(n)) errors.push("- Name cannot start with a number.");
-      if (ph && !ph.type.startsWith("image/")) errors.push("- Photo must be an image file.");
+           var errors = [];
+
+      if (!n || !em || !dob || !sk || !ed || !ph) {
+        errors.push("- Please fill in all fields.");
+      }
+
+      if (/^\d/.test(n)) {
+        errors.push("- Name cannot start with a number.");
+      }
+
+      if (ph && !ph.type.startsWith("image/")) {
+        errors.push("- Photo must be an image file.");
+      }
+
+      if (dob) {
+        var dobDate = new Date(dob);
+        var today = new Date();
+
+        var age = today.getFullYear() - dobDate.getFullYear();
+        var m = today.getMonth() - dobDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) {
+          age--;
+        }
+
+        if (age < 18) {
+          errors.push("- Member must be at least 18 years old.");
+        }
+      }
 
       if (errors.length > 0) {
         alert(errors.join("\n"));
         return;
       }
 
+
       var members = getMembers();
 
       members.push({
         name: n,
-        role: sk,
-        photo: "images/member-placeholder.png" 
+        role: sk, 
+        photo: "images/member-placeholder.png"
       });
 
       saveMembers(members);
