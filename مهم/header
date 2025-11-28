@@ -24,12 +24,17 @@
     </div>
 ============================================================================================================
 
-    
-	<!-- Theme toggle switch -->
+ <!-- Theme toggle switch -->
+
 <label class="theme-switch">
+
   <input type="checkbox" id="themeToggle">
   <span class="slider"></span>
+  
 </label>
+<div style="text-align:center; font-size:12px; color:RebeccaPurple; margin-top:3px;">
+  Theme
+</div>
 
 
     <!-- صندوق بحث بسيط (شكل فقط) -->
