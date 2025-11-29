@@ -1,63 +1,58 @@
-
-
-
-
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Ruqma</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Provider Dashboard - Ruqma</title>
 </head>
+
 <body>
 
- <header> 
-   <!-- الهيدر: شعار + روابط + بحث -->
+<header> 
   <div id="topbar">
+
     <div id="logo-area">
-      <!-- نرجّع للهوم عند الضغط على الشعار -->
-      <a href="HomePage.html">
-        <img src="images/logo-placeholder.png" alt="Logo" width="45" height="45">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-header">
       </a>
-      <span class="site-name">Ruqma</span>
     </div>
 
-   <!-- روابط الصفحات الأساسية -->
     <div id="nav-area">
       <a href="index.html">Home</a>
       <a href="Services.html">Services</a>
       <a href="About_us_page.html">About Us</a>
-      <a href="customer-dashboard.html">Customer Dashboard</a>
       <a href="Services_Provider_Dashboard.html">Provider Dashboard</a>
     </div>
 
-    <!-- صندوق بحث بسيط (شكل فقط) -->
+    
+
+    <!-- Search Box -->
     <form id="search-box" action="#" method="get">
       <input type="search" name="q" placeholder="Search">
       <button type="submit" title="Search">
-        <img src="images/search-icon.png" alt="Search" width="18" height="18">
+        <img src="images/icon-search.png" alt="Search" width="18" height="18">
       </button>
     </form>
+
   </div>
-  <hr>
-  <!-- Breadcrumb with links -->
-<div class="container">
-  <nav class="breadcrumb" aria-label="Breadcrumb">
+
+  <!-- Breadcrumbs -->
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="index.html">Home</a>
-    <span class="sep">›</span>
-    <strong> Provider Dashboard</strong>
-  </nav>
-</div>
+      <span class="sep">›</span>
+      <a href="Services_Provider_Dashboard.html">Provider Dashboard</a>
+    </nav>
+  </div>
 
 </header>
 
 
-  <!-- Page Title -->
-  <h1>Service Provider Dashboard</h1>
+<h1 id="providerSerrviceD">Service Provider Dashboard</h1>
 
-  <!-- Service List Table -->
-  <table border="1" cellspacing="0" cellpadding="10">
+<main>
+  <table class="service-table">
     <thead>
       <tr>
         <th>Service</th>
@@ -66,123 +61,45 @@
         <th>Actions</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Search Engine Optimization(SEO)</td>
-        <td>200 SAR</td>
-        <td>Optimizing your site's content, structure, and technical aspects.
-		So, it can attract more traffic by ranking higher on search engine
-		results pages for relevant keywords.</td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr>
-      <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Visual Identity</td>
-        <td>500 SAR</td>
-        <td>Creating a unique visual representation of your brand, a collection of  logo, colors, typography, and imagery,
-		to stand out to consumers, build recognition, and create an emotional connection with customers. </td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr>
-      <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Creative Content Creation</td>
-        <td>150 SAR</td>
-        <td>Creating of engaging materials like text, images, audio, and video to 
-		build brand awareness, connect with customers, and achieve marketing 
-		objectives.</td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr><!-- start-->
-	   <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Logo Design</td>
-        <td>100 SAR</td>
-        <td>Designing a creative and memorable logo that reflects your brand’s identity 
-and helps customers recognize your business easily..</td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr>
-	  
-	   <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Digital Marketing Campaigns</td>
-        <td>600 SAR</td>
-        <td>Planning and running online advertisements to reach target audiences, 
-increase engagement, and promote business growth.</td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr>
-	  
-	   <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Email Marketing</td>
-        <td>50 SAR</td>
-        <td>Sending personalized messages and promotional emails to customers to share updates, 
-increase engagement, and strengthen relationships with your audience..</td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr>
-	  
-	  
-	   <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Data Analysis & Reportingn</td>
-        <td>350 SAR</td>
-        <td>Collecting and studying information from business activities to identify trends, 
-       measure performance, and support better decision-making through clear reports.</td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr>
-	  
-	  
-	   <tr>
-        <td><img src="placeholder.jpg" alt="Service Image" width="50"> Social Media Management</td>
-        <td>900 SAR</td>
-        <td>Managing social media accounts by planning posts, creating content, and communicating 
-      with followers to increase brand awareness and build customer loyalty.</td>
-        <td>
-          <a href="#"><img src="edit-icon.png" alt="Edit" width="20"></a>
-          <a href="#"><img src="delete-icon.png" alt="Delete" width="20"></a>
-        </td>
-      </tr>
-	  
-    </tbody>
+
+    <tbody id="serviceList"></tbody>
   </table>
 
-  <!-- Buttons Section -->
-  <div>
-    <br>
-    <a href="Add_New_Service.html">
-      <button type="button">Add Service +</button>
-    </a>
-    <br><br>
-    <a href="ManageStaffMembers.html">
-      <button type="button">Manage Staff Members</button>
-    </a>
+  <div class="dashboard-buttons">
+    <a href="Add_New_Service.html" class="dashboard-btn">Add Service +</a>
+    <a href="ManageStaffMembers.html" class="dashboard-btn">Manage Staff Members</a>
   </div>
+</main>
 
-  <!-- Footer -->
-  
-  <footer>
-    <p>Follow Us:</p>
-    <p>
-      <a href="#">X</a> |
-      <a href="#">Snapchat</a> |
-      <a href="#">Instagram</a>
-    </p>
-    <p>Contact Us: info@example.com | 050-000-0000</p>
-    <p>Copyright © 2025 Ruqma. All rights reserved.</p>
-  </footer>
+<footer> 
+  <div id="footer">
+    <div>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-footer">
+      </a>
+    </div>
 
+    <div>
+      Follow Us: <br><br>
+      <div id="footer-icons">
+        <a href="#"><img src="images/icon-x.png" alt="X"></a>
+        <a href="#"><img src="images/icon-Snapchat.png" alt="Snapchat"></a>
+        <a href="#"><img src="images/icon-Instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div>
+      Contact Us: <br>
+      <p>Email: Ruqma@gmail.com</p>
+      <p>Phone: 055-555-5555</p>
+    </div>
+
+    <p class="copy">&copy; 2025 Ruqma. All rights reserved.</p>
+  </div>
+</footer>
+<button id="backToTop" title="Back to top">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
+
