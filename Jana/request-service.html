@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Request A Service - Ruqma</title>
+</head>
+<body>
+ <header> 
+    <div id="topbar">
+  <!-- Live clock (in header) -->
+<div id="headerClock">
+  <span id="liveClock"></span>
+</div>
+
+    <div id="logo-area">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-header">
+      </a>
+
+    </div>
+
+    <div id="nav-area">
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="About_us_page.html">About Us</a>
+      <a href="customer-dashboard.html">Customer Dashboard</a>
+    </div>
+<!-- Theme toggle switch -->
+<label class="theme-switch">
+  <input type="checkbox" id="themeToggle">
+  <span class="slider"></span>
+</label>
+
+    <!-- صندوق بحث بسيط (شكل فقط) -->
+    <form id="search-box" action="#" method="get">
+      <input type="search" name="q" placeholder="Search">
+      <button type="submit" title="Search">
+        <img src="images/icon-search.png" alt="Search" width="18" height="18">
+      </button>
+    </form>
+	
+  </div>
+  <!-- Breadcrumb with links -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+    <span class="sep">›</span>
+      <a href="customer-dashboard.html">Customer Dashboard</a>
+    <span class="sep">›</span>
+    <a href="request-service.html">Request A Service</a>
+  </nav>
+</div>
+
+
+</header>
+
+<main>
+  <h2 id="titleRequest">Service Request</h2>
+  <!-- is this allowed -->
+
+<form action="#" method="post" class="RequestService-form" onsubmit="return validateRequest(event);">
+      Name:<br>
+      <input type="text" id="name" name="customer_name">
+	   <br>
+
+      Service:<br>
+      <select id="service" name="service">
+        <option value="">Select Service</option>
+        <option >Search Engine Optimization (SEO)</option> <!-- remove value or replace it with full service name-->
+        <option value="Creative Content Creation"> Creative Content Creation</option>
+        <option value="Visual Identity">Visual Identity</option>
+      </select>
+	  <br>
+   
+      Due Date:<br>
+      <input type="date" id="due_date" name="due_date">
+	  <br>
+ 
+      Description:<br>
+      <textarea id="description" name="description" rows="5" cols="40"></textarea>
+ 
+      <input type="submit" value="Submit Request" class="buttonsService">
+
+  </form>
+  <div id="addedRequests"></div>
+  </main>
+<button id="backToTop" title="Back to top">↑</button>
+  <footer> 
+<div id="footer">
+
+
+<div>
+<a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-footer">
+      </a>
+</div>
+<div>
+	Follow Us: <br> <br>
+    <div id="footer-icons">
+	  <a href="#"><img src="images/icon-x.png" alt="X"></a>
+      <a href="#"><img src="images/icon-Snapchat.png" alt="Snapchat"></a>
+      <a href="#"><img src="images/icon-Instagram.png" alt="Instagram"></a>
+	  <br>  
+    </div>
+</div>
+
+<div>
+    Contact Us: <br> 
+    <p>Email: Ruqma@gmail.com</p> <p> Phone: 055-555-5555</p>
+</div>
+  <p class="copy"> Copyright: &copy; 2025 Ruqma. All rights reserved.</p>
+ </div>
+ 
+</footer>
+  <script src="request.js"></script>
+
+</body>
+</html>
