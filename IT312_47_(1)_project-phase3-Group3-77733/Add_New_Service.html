@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Add New Service - Ruqma</title>
+</head>
+
+<body>
+
+<header> 
+  <div id="topbar">
+
+    <div id="logo-area">
+      <a href="index.html">
+        <img src="images/logo.png" width="70" height="90" id="logo-header">
+      </a>
+    </div>
+
+    <div id="nav-area">
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="About_us_page.html">About Us</a>
+      <a href="Services_Provider_Dashboard.html">Provider Dashboard</a>
+    </div>
+
+    
+
+    <form id="search-box" action="#" method="get">
+      <input type="search" name="q" placeholder="Search">
+      <button type="submit">
+        <img src="images/icon-search.png" width="18">
+      </button>
+    </form>
+
+  </div>
+
+  <!--  Breadcrumbs  -->
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="Add_New_Service.html">Add Service</a>
+    </nav>
+  </div>
+
+</header>
+
+<main>
+<section class="add-service-page">
+
+  <h1>Add a New Service</h1>
+
+  <form id="serviceForm">
+    <label for="serviceName">Service Name:</label>
+    <input type="text" id="serviceName">
+
+    <label for="servicePrice">Service Price:</label>
+    <input type="text" id="servicePrice">
+
+    <label for="serviceDescription">Service Description:</label>
+    <textarea id="serviceDescription" rows="5"></textarea>
+
+    <p><strong>Upload Photo:</strong></p>
+    <div class="upload-box">
+      <img src="images/upload-icon.png" width="60">
+      <p>Browse File</p>
+      <input type="file" id="photo">
+    </div>
+
+    <input type="submit" value="Add Service">
+  </form>
+
+</section>
+</main>
+
+ <button id="backToTop" title="Back to top">↑</button>
+ <div id="headerClock">
+  <span id="liveClock"></span>
+</div>
+<footer>
+  <div id="footer">
+    <div>
+      <a href="index.html">
+        <img src="images/logo.png" width="70" height="90">
+      </a>
+    </div>
+    <div>
+      Follow Us:<br><br>
+      <div id="footer-icons">
+        <a href="#"><img src="images/icon-x.png"></a>
+        <a href="#"><img src="images/icon-Snapchat.png"></a>
+        <a href="#"><img src="images/icon-Instagram.png"></a>
+      </div>
+    </div>
+    <div>
+      Contact Us: <br>
+      <p>Email: Ruqma@gmail.com</p>
+      <p>Phone: 055-555-5555</p>
+    </div>
+    <p class="copy">Copyright © 2025 Ruqma.</p>
+  </div>
+ 
+</footer>
+
+<script src="script2.js"></script>
+
+</body>
+</html>

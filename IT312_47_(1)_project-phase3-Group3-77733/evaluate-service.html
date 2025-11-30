@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  	<script src="script.js"></script>
+  <title>Service Evaluation - Ruqma</title>
+</head>
+<body> 
+<header> 
+   <div id="topbar">
+
+    <div id="logo-area">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-header">
+      </a>
+
+    </div>
+
+    <div id="nav-area">
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="About_us_page.html">About Us</a>
+      <a href="customer-dashboard.html">Customer Dashboard</a>
+    </div>
+
+    <form id="search-box" action="#" method="get">
+      <input type="search" name="q" placeholder="Search">
+      <button type="submit" title="Search">
+        <img src="images/icon-search.png" alt="Search" width="18" height="18">
+      </button>
+    </form>
+	
+  </div>
+  <!-- Breadcrumb with links -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">›</span>
+      <a href="customer-dashboard.html">Customer Dashboard</a>
+    <span class="sep">›</span>
+    <a href="evaluate-service.html">Service Evaluation</a>
+  </nav>
+</div>
+
+
+</header>
+
+<main>
+  <h2 id="titleEvaluate">Service Evaluation</h2>
+
+<form action="#" method="post" class="EvaluateService" onsubmit="return validateEvaluation(event);">
+      Service:<br>
+      <select id="service" name="service">
+        <option value="">Select Previous Service</option>
+       <option value="SEO">Search Engine Optimization (SEO)</option>
+        <option value="Content"> Creative Content Creation</option>
+        <option value="Identity">Visual Identity</option>
+      </select>
+	  <br>
+	  
+	  Rate this Service: <br>
+    <div class="stars">
+
+      <input type="radio" id="star5" name="rating" value="5">
+      <label for="star5">&#9733;</label>
+
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4">&#9733;</label>
+
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3">&#9733;</label>
+
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2">&#9733;</label>
+
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1">&#9733;</label>
+    </div>
+	<br>
+
+      Your Feedback:<br>
+      <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
+
+      <input type="submit" value="Submit" class="buttonsService">
+
+  </form>
+  </main>
+  
+  <button id="backToTop" title="Back to top">↑</button>
+  <div id="headerClock">
+  <span id="liveClock"></span>
+</div>
+
+ <footer> 
+<div id="footer">
+
+
+<div>
+<a href="index.html">
+        <img src="images/logo.png" alt="Logo" width="70" height="90" id="logo-footer">
+      </a>
+</div>
+<div>
+	Follow Us: <br> <br>
+    <div id="footer-icons">
+	  <a href="#"><img src="images/icon-x.png" alt="X"></a>
+      <a href="#"><img src="images/icon-Snapchat.png" alt="Snapchat"></a>
+      <a href="#"><img src="images/icon-Instagram.png" alt="Instagram"></a>
+	  <br>  
+    </div>
+</div>
+
+<div>
+    Contact Us: <br> 
+    <p>Email: Ruqma@gmail.com</p> <p> Phone: 055-555-5555</p>
+</div>
+  <p class="copy"> Copyright: &copy; 2025 Ruqma. All rights reserved.</p>
+ </div>
+ 
+</footer>
+    <script src="evaluate.js"></script>
+
+</body>
+</html>
